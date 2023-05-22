@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="cameraCapture" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="wizard.png" translatesAutoresizingMaskIntoConstraints="NO" id="Vud-Uf-9zl">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MQZ-85-WjV">
+                                <rect key="frame" x="0.0" y="59" width="393" height="370"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="MQZ-85-WjV" secondAttribute="height" multiplier="361:370" constant="32" id="yZb-Qg-1b2"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0v-5k-JF7">
+                                <rect key="frame" x="16" y="645" width="361" height="35"/>
+                                <color key="tintColor" red="0.82503896519999997" green="0.038404262617415634" blue="0.14468933176471929" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="abracadabra">
+                                    <color key="baseForegroundColor" red="0.060337156060000001" green="0.05091985315" blue="0.10070865599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="baseBackgroundColor" red="0.82428139450000004" green="0.038523357360000003" blue="0.1428767443" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZmW-rN-JHd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="top" secondItem="Vud-Uf-9zl" secondAttribute="top" constant="59" id="25D-iV-kmP"/>
+                            <constraint firstItem="Vud-Uf-9zl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="7lt-e7-Xyk"/>
+                            <constraint firstItem="a0v-5k-JF7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="92E-mv-zi4"/>
+                            <constraint firstItem="MQZ-85-WjV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="agM-cy-Tbf"/>
+                            <constraint firstItem="a0v-5k-JF7" firstAttribute="top" secondItem="MQZ-85-WjV" secondAttribute="bottom" constant="216" id="dlW-V0-2K3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="a0v-5k-JF7" secondAttribute="trailing" constant="16" id="eRN-P3-g3Z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Vud-Uf-9zl" secondAttribute="bottom" constant="-34" id="k1K-Rz-xHB"/>
+                            <constraint firstItem="MQZ-85-WjV" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="kz9-81-gd2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="MQZ-85-WjV" secondAttribute="trailing" id="nMX-fr-OEf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Vud-Uf-9zl" secondAttribute="trailing" id="ptA-bD-ogt"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="MQZ-85-WjV" id="h0t-Cy-vSX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="17.557251908396946" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="wizard.png" width="877.5" height="1899"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
